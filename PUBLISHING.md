@@ -75,7 +75,7 @@ with "UI and API" or "UI and gem signin" level.
 
 Because RubyGems supports *pending* publishers, the first release needs no API
 key either. At
-[rubygems.org/settings/trusted_publishers](https://rubygems.org/settings/trusted_publishers)
+[rubygems.org/profile/oidc/pending_trusted_publishers](https://rubygems.org/profile/oidc/pending_trusted_publishers)
 → **Create**:
 
 | Field | Value |

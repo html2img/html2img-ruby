@@ -12,7 +12,7 @@
 # Configure the publisher once at
 # https://rubygems.org/gems/html2img-client/trusted_publishers (or, before the
 # first release, as a pending publisher at
-# https://rubygems.org/settings/trusted_publishers) with:
+# https://rubygems.org/profile/oidc/pending_trusted_publishers) with:
 #   Owner:            html2img
 #   Repository:       html2img-ruby
 #   Workflow:         publish.yml
