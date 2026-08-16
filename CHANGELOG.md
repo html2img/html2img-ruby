@@ -6,6 +6,19 @@ follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-08-16
+
+### Added
+
+- A Railtie, loaded automatically when Rails is present, so a Rails app can
+  configure the client with `config.html2img.api_key` (and `base_url`,
+  `timeout`, `transport`) from any environment file.
+- `rails generate html2img:install`, which writes a commented
+  `config/initializers/html2img.rb`.
+
+Both are optional and add no runtime dependencies: `rails/railtie` is only
+required when Rails is already loaded.
+
 ## [1.0.0] - 2026-08-16
 
 Initial release of the official Ruby client for the
@@ -30,5 +43,6 @@ Initial release of the official Ruby client for the
   responding to `#call` can replace it.
 - An `html2img` executable with `test`, `html`, `screenshot` and `template`.
 
-[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/html2img/html2img-ruby/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/html2img/html2img-ruby/releases/tag/v1.0.0

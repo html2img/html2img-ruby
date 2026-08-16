@@ -235,6 +235,22 @@ post.og_image.attach(
 
 ## Rails
 
+The gem detects Rails and loads a Railtie, so there is nothing to require. Generate an initializer:
+
+```bash
+bin/rails generate html2img:install
+```
+
+That writes a commented `config/initializers/html2img.rb` reading your key from the environment. Or configure it from any environment file instead, which is handy for per-environment settings:
+
+```ruby
+# config/environments/production.rb
+config.html2img.api_key = Rails.application.credentials.html2img_api_key
+config.html2img.timeout = 45
+```
+
+Both routes end up at the same place. The Railtie runs before `config/initializers`, so an explicit `Html2img.configure` block wins if you use both.
+
 Render an Action View template into the image, so the card lives with the rest of your views:
 
 ```ruby
@@ -256,8 +272,6 @@ Then output it in your layout:
 ```erb
 <meta property="og:image" content="<%= @post.og_image_url %>">
 ```
-
-Configure the client once in an initializer, as shown in [configuration](#configuration).
 
 ## Background jobs
 

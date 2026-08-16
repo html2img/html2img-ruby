@@ -269,3 +269,7 @@ module Html2img
     end
   end
 end
+
+# Rails applications get the Railtie for free: config.html2img.* in any
+# environment file, and `rails generate html2img:install`.
+require_relative "railtie" if defined?(Rails::Railtie)
