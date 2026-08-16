@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+/.github        export-ignore
+/.gitattributes export-ignore
+/.gitignore     export-ignore
+/.rubocop.yml   export-ignore
+/spec           export-ignore
+/examples       export-ignore
+/PUBLISHING.md  export-ignore

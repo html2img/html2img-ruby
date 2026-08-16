@@ -1,0 +1,57 @@
+# Publishes the gem to RubyGems.org using trusted publishing (OIDC), so there
+# is no API key stored anywhere.
+#
+# Unlike the Python packages, this is triggered by hand rather than by a GitHub
+# release: `rake release` (which rubygems/release-gem runs) creates and pushes
+# the git tag itself, so the tag must not exist beforehand.
+#
+# To release:
+#   1. Bump Html2img::VERSION, update CHANGELOG.md, commit and push
+#   2. Actions -> Publish -> Run workflow
+#
+# Configure the publisher once at
+# https://rubygems.org/gems/html2img-client/trusted_publishers (or, before the
+# first release, as a pending publisher at
+# https://rubygems.org/settings/trusted_publishers) with:
+#   Owner:            html2img
+#   Repository:       html2img-ruby
+#   Workflow:         publish.yml
+#   Environment:      release
+#
+# See PUBLISHING.md for the full walkthrough.
+
+name: Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  push:
+    name: Push gem to RubyGems.org
+    runs-on: ubuntu-latest
+
+    environment:
+      name: release
+      url: https://rubygems.org/gems/html2img-client
+
+    permissions:
+      contents: write # to push the version tag
+      id-token: write # to authenticate to RubyGems.org over OIDC
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      - name: Verify before releasing
+        run: |
+          bundle exec rspec
+          bundle exec rubocop
+
+      - name: Release
+        uses: rubygems/release-gem@v1

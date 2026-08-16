@@ -1,0 +1,68 @@
+plugins:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - "vendor/**/*"
+    - "tmp/**/*"
+
+Layout/LineLength:
+  Max: 110
+
+# Double quotes throughout, matching the other html2img client libraries.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+# Stubbing Net::HTTP is the point of the transport specs.
+RSpec/AnyInstance:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    # The examples are illustrative scripts, not library code.
+    - "examples/**/*"
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "*.gemspec"
+
+Metrics/ClassLength:
+  Max: 200
+
+# Keyword arguments do not have the positional-ordering problem this cop guards against.
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
+# The gem is html2img-client, so Bundler's default require needs this exact filename.
+Naming/FileName:
+  Exclude:
+    - "lib/html2img-client.rb"
+
+Style/Documentation:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/MultipleExpectations:
+  Max: 6
+
+RSpec/NestedGroups:
+  Max: 4
+
+# The error spec maps statuses onto every error class by name; that explicitness
+# is the point of the table, so described_class would make it less readable.
+RSpec/DescribedClass:
+  Exclude:
+    - "spec/html2img/error_spec.rb"

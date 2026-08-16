@@ -1,0 +1,23 @@
+# Bundler
+/.bundle/
+/vendor/bundle/
+Gemfile.lock
+
+# Build artefacts
+/pkg/
+*.gem
+
+# Test and tooling caches
+/coverage/
+/tmp/
+.rspec_status
+.rubocop_cache/
+
+# Scratch output from local renders
+*.png
+*.pdf
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
