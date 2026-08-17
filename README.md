@@ -458,10 +458,9 @@ The same API has worked guides and official packages for
 [Django](https://github.com/html2img/html2img-django),
 [PHP](https://html2img.com/integrations/php/),
 [Laravel](https://html2img.com/integrations/laravel/),
-[Ruby on Rails](https://html2img.com/docs/usage/rails),
 [JavaScript and Node.js](https://html2img.com/integrations/javascript/),
-[React](https://html2img.com/docs/usage/react),
-[Vue](https://html2img.com/docs/usage/vue),
+[React](https://html2img.com/integrations/javascript/#react-and-nextjs),
+[Vue](https://html2img.com/integrations/javascript/#vue-and-nuxt),
 [WordPress](https://html2img.com/integrations/wordpress/) and
 [Statamic](https://html2img.com/integrations/statamic/).
 
