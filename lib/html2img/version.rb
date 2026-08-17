@@ -2,5 +2,5 @@
 
 module Html2img
   # Single source of truth for the gem version.
-  VERSION = "1.1.0"
+  VERSION = "1.1.1"
 end

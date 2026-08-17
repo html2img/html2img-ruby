@@ -6,6 +6,17 @@ follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-08-17
+
+### Changed
+
+- `documentation_uri` now points at <https://html2img.com/integrations/ruby/>.
+  The Ruby guide moved and the old `/docs/usage/ruby` URL 404s, so the
+  documentation link on the gem page pointed nowhere. Because gemspec metadata
+  is fixed at build time, correcting it needs a release.
+- The same move applied to the guide links in the README and in the generated
+  `config/initializers/html2img.rb`.
+
 ## [1.1.0] - 2026-08-16
 
 ### Added
@@ -43,6 +54,7 @@ Initial release of the official Ruby client for the
   responding to `#call` can replace it.
 - An `html2img` executable with `test`, `html`, `screenshot` and `template`.
 
-[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/html2img/html2img-ruby/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/html2img/html2img-ruby/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/html2img/html2img-ruby/releases/tag/v1.0.0
