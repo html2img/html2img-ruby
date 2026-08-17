@@ -2,7 +2,7 @@
 
 # Configuration for the html2img HTML to Image API.
 #
-# Docs: https://html2img.com/docs/usage/ruby
+# Docs: https://html2img.com/integrations/ruby/
 # Keys: https://app.html2img.com/register
 
 Html2img.configure do |config|

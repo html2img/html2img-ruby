@@ -47,6 +47,6 @@ RSpec.describe Html2img::Generators::InstallGenerator do
   end
 
   it "points at the docs" do
-    expect(initializer).to include("https://html2img.com/docs/usage/ruby")
+    expect(initializer).to include("https://html2img.com/integrations/ruby/")
   end
 end

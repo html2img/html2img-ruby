@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
     "source_code_uri" => "https://github.com/html2img/html2img-ruby",
     "changelog_uri" => "https://github.com/html2img/html2img-ruby/blob/main/CHANGELOG.md",
     "bug_tracker_uri" => "https://github.com/html2img/html2img-ruby/issues",
-    "documentation_uri" => "https://html2img.com/docs/usage/ruby",
+    "documentation_uri" => "https://html2img.com/integrations/ruby/",
     "rubygems_mfa_required" => "true"
   }
 

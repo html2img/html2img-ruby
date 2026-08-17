@@ -9,7 +9,7 @@
 
 The official Ruby client for the [HTML to Image API](https://html2img.com) at html2img.com. Turn HTML and CSS into images, capture screenshots of live URLs, render named templates, and export A4 PDFs, all returning a typed response object.
 
-Every render runs in real Chrome, so flexbox, grid, custom properties, web fonts and inline JavaScript behave exactly as they do in the browser. The gem has **zero runtime dependencies** — it is built on Net::HTTP from the standard library — and works anywhere Ruby does: Rails and Sinatra apps, Sidekiq and Active Job workers, rake tasks and one-off scripts. The full API reference lives in the [documentation](https://html2img.com/docs), with a Ruby guide at [html2img.com/docs/usage/ruby](https://html2img.com/docs/usage/ruby).
+Every render runs in real Chrome, so flexbox, grid, custom properties, web fonts and inline JavaScript behave exactly as they do in the browser. The gem has **zero runtime dependencies** — it is built on Net::HTTP from the standard library — and works anywhere Ruby does: Rails and Sinatra apps, Sidekiq and Active Job workers, rake tasks and one-off scripts. The full API reference lives in the [documentation](https://html2img.com/docs), with a Ruby guide at [html2img.com/integrations/ruby](https://html2img.com/integrations/ruby/).
 
 Three things this gem does, each with its own worked guide:
 
@@ -456,14 +456,14 @@ It prints the resulting image URL and your remaining credits, or a clear error i
 The same API has worked guides and official packages for
 [Python](https://github.com/html2img/html2img-python),
 [Django](https://github.com/html2img/html2img-django),
-[PHP](https://html2img.com/docs/usage/php),
-[Laravel](https://html2img.com/docs/usage/laravel),
+[PHP](https://html2img.com/integrations/php/),
+[Laravel](https://html2img.com/integrations/laravel/),
 [Ruby on Rails](https://html2img.com/docs/usage/rails),
-[JavaScript and Node.js](https://html2img.com/docs/usage/javascript),
+[JavaScript and Node.js](https://html2img.com/integrations/javascript/),
 [React](https://html2img.com/docs/usage/react),
 [Vue](https://html2img.com/docs/usage/vue),
-[WordPress](https://html2img.com/docs/usage/wordpress) and
-[Statamic](https://html2img.com/docs/usage/statamic).
+[WordPress](https://html2img.com/integrations/wordpress/) and
+[Statamic](https://html2img.com/integrations/statamic/).
 
 ## Development
 
@@ -479,7 +479,7 @@ Publishing to RubyGems is covered in [PUBLISHING.md](PUBLISHING.md).
 
 ## Links
 
-[HTML to Image API](https://html2img.com) · [Screenshot API](https://html2img.com/screenshot-api/) · [HTML to PDF API](https://html2img.com/html-to-pdf/) · [Documentation](https://html2img.com/docs) · [Ruby guide](https://html2img.com/docs/usage/ruby) · [Templates](https://html2img.com/templates) · [Tools](https://html2img.com/tools) · [Features](https://html2img.com/features) · [Comparisons](https://html2img.com/compare) · [Articles](https://html2img.com/articles) · [Pricing](https://html2img.com/pricing)
+[HTML to Image API](https://html2img.com) · [Screenshot API](https://html2img.com/screenshot-api/) · [HTML to PDF API](https://html2img.com/html-to-pdf/) · [Documentation](https://html2img.com/docs) · [Ruby guide](https://html2img.com/integrations/ruby/) · [Templates](https://html2img.com/templates) · [Tools](https://html2img.com/tools) · [Features](https://html2img.com/features) · [Comparisons](https://html2img.com/compare) · [Articles](https://html2img.com/articles) · [Pricing](https://html2img.com/pricing)
 
 ## Licence
 
