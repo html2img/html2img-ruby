@@ -453,16 +453,14 @@ It prints the resulting image URL and your remaining credits, or a clear error i
 
 ## Other languages and frameworks
 
-The same API has worked guides and official packages for
-[Python](https://github.com/html2img/html2img-python),
-[Django](https://github.com/html2img/html2img-django),
-[PHP](https://html2img.com/integrations/php/),
-[Laravel](https://html2img.com/integrations/laravel/),
-[JavaScript and Node.js](https://html2img.com/integrations/javascript/),
-[React](https://html2img.com/integrations/javascript/#react-and-nextjs),
-[Vue](https://html2img.com/integrations/javascript/#vue-and-nuxt),
-[WordPress](https://html2img.com/integrations/wordpress/) and
-[Statamic](https://html2img.com/integrations/statamic/).
+The same API has official packages for other languages and platforms, all available now:
+
+- **SDKs:** [PHP](https://github.com/html2img/html2img-php) · [JavaScript and TypeScript](https://github.com/html2img/html2img-js) · [Python](https://github.com/html2img/html2img-python)
+- **Frameworks:** [Laravel](https://github.com/html2img/html2img-laravel) · [Django](https://github.com/html2img/html2img-django)
+- **CMS plugins:** [WordPress](https://wordpress.org/plugins/html2img/) · [Statamic](https://github.com/html2img/statamic-og-images) · [Craft CMS](https://plugins.craftcms.com/og-images)
+- **Automation and AI:** [GitHub Action](https://github.com/marketplace/actions/html-to-image) · [MCP server](https://html2img.com/mcp/) (paid plans)
+
+There are also worked guides for [React](https://html2img.com/integrations/javascript/#react-and-nextjs) and [Vue](https://html2img.com/integrations/javascript/#vue-and-nuxt), and anything that can make an HTTP request works with the API. Every integration is listed on the [integrations hub](https://html2img.com/integrations/).
 
 ## Development
 

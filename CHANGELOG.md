@@ -6,6 +6,15 @@ follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and the
 
 ## [Unreleased]
 
+## [1.1.2] - 2026-09-23
+
+### Changed
+
+- README: the "Other languages and frameworks" section now lists every
+  official package (SDKs, framework integrations, CMS plugins, the GitHub
+  Action and the MCP server). Documentation only; the code is identical to
+  1.1.1.
+
 ## [1.1.1] - 2026-08-17
 
 ### Changed
@@ -54,7 +63,8 @@ Initial release of the official Ruby client for the
   responding to `#call` can replace it.
 - An `html2img` executable with `test`, `html`, `screenshot` and `template`.
 
-[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/html2img/html2img-ruby/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/html2img/html2img-ruby/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/html2img/html2img-ruby/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/html2img/html2img-ruby/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/html2img/html2img-ruby/releases/tag/v1.0.0
