@@ -1,6 +1,6 @@
-[![html2img — HTML to image API, rendered in real Chrome](https://html2img.com/og-image.png)](https://html2img.com)
+[![HTML to Image (html2img): HTML to image API, rendered in real Chrome](https://html2img.com/og-image.png)](https://html2img.com)
 
-# html2img for Ruby
+# HTML to Image (html2img) for Ruby
 
 [![Gem Version](https://img.shields.io/gem/v/html2img-client)](https://rubygems.org/gems/html2img-client)
 [![Downloads](https://img.shields.io/gem/dt/html2img-client)](https://rubygems.org/gems/html2img-client)
